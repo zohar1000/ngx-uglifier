@@ -19,7 +19,7 @@ When building an angular library, the following names need to remain unchanged, 
 All class members declared as protected/private can be uglified.<br/>
 However, since the uglification works on .js file there can be no distinction between public and protected/private members.<br/>
 In order to provide this distinction we need to plan our code for it.<br/>
-My suggestion is to prefix the protected/private members with an underscore or something alike, you can then pass an option 
+My suggestion is to prefix the protected/private members with an underscore or something alike, you can then pass an option
 to terser telling it to uglify only members which start with underscore.<br/>
 
 Here is a sample code for a directive having private variables/methods prefixed with underscore.<br/>

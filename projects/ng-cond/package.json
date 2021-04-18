@@ -1,0 +1,7 @@
+{
+  "name": "ng-cond",
+  "version": "1.0.24",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

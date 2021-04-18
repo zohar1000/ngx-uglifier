@@ -1,0 +1,17 @@
+{
+  "name": "ngx-uglifier",
+  "version": "1.0.1",
+  "private": false,
+  "decription": "uglifies angular package",
+  "keywords": ["angular", "uglify"],
+  "author": {
+	"name": "Zohar Sabari",
+	"email": "zohar1000@gmail.com"
+  },
+  "homepage": "https://github.com/zohar1000/ngx-uglifier",
+  "repository": "github:zohar1000/ngx-uglifier",
+  "license" : "MIT",
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

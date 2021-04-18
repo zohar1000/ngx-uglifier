@@ -6,13 +6,12 @@
   "rules": {
     "align": {
       "options": [
-        "parameters",
-        "statements"
+        "parameters"
       ]
     },
     "array-type": false,
     "arrow-return-shorthand": true,
-    "curly": true,
+    "curly": false,
     "deprecation": {
       "severity": "warning"
     },
@@ -28,10 +27,7 @@
       ]
     },
     "max-classes-per-file": false,
-    "max-line-length": [
-      true,
-      140
-    ],
+    "max-line-length": false,
     "member-ordering": [
       true,
       {
@@ -73,17 +69,9 @@
         "always"
       ]
     },
-    "space-before-function-paren": {
-      "options": {
-        "anonymous": "never",
-        "asyncArrow": "always",
-        "constructor": "never",
-        "method": "never",
-        "named": "never"
-      }
-    },
+    "space-before-function-paren": false,
     "typedef": [
-      true,
+      false,
       "call-signature"
     ],
     "typedef-whitespace": {
@@ -104,13 +92,7 @@
         }
       ]
     },
-    "variable-name": {
-      "options": [
-        "ban-keywords",
-        "check-format",
-        "allow-pascal-case"
-      ]
-    },
+    "variable-name": false,
     "whitespace": {
       "options": [
         "check-branch",

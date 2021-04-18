@@ -1,14 +1,26 @@
 {
-  "name": "ngx-obfuscator",
-  "version": "0.0.0",
+  "name": "ngx-uglifier",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "build:ngx-uglifier": "ng build ngx-uglifier --prod",
+    "build:cond": "ng build ng-cond --prod",
+    "uglify:cond": "node uglifier.js"
   },
-  "private": true,
+  "private": false,
+  "decription": "uglifies angular package",
+  "keywords": ["angular", "uglify"],
+  "author": {
+	"name": "Zohar Sabari",
+	"email": "zohar1000@gmail.com"
+  },
+  "homepage": "https://github.com/zohar1000/ngx-uglifier",
+  "repository": "github:zohar1000/ngx-uglifier",
+  "license" : "MIT",
   "dependencies": {
     "@angular/animations": "~11.2.0",
     "@angular/common": "~11.2.0",
@@ -18,16 +30,21 @@
     "@angular/platform-browser": "~11.2.0",
     "@angular/platform-browser-dynamic": "~11.2.0",
     "@angular/router": "~11.2.0",
+    "ng-cond": "^1.0.25",
+    "ng-lib": "^1.0.0",
+    "ngx-uglifier": "^1.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1102.9",
     "@angular/cli": "~11.2.0",
     "@angular/compiler-cli": "~11.2.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
+    "cpr": "^3.0.1",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.1.0",
@@ -35,6 +52,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",

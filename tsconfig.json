@@ -10,6 +10,16 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "ng-cond": [
+        "dist/ng-cond/ng-cond",
+        "dist/ng-cond"
+      ],
+      "ngx-uglifier": [
+        "dist/ngx-uglifier/ngx-uglifier",
+        "dist/ngx-uglifier"
+      ]
+    },
     "target": "es2015",
     "module": "es2020",
     "lib": [
