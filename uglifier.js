@@ -2,9 +2,7 @@ const NgxUglifier = require('./dist/ngx-uglifier');
 // const NgxUglifier = require('ngx-uglifier');
 
 const config = {
-	projectName: 'ng-cond',
-	srcParentFolder: 'dist',
-	destParentFolder: 'uglified'
+	projectName: 'ng-cond'
 }
 
 const ngxUglifier = new NgxUglifier.NgxUglifier(config);

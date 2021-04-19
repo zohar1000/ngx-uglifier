@@ -29,6 +29,8 @@ export class NgxUglifier {
   }
 
   async init() {
+    await this.verifyDirectory(this.currDestParentFolder);
+    await this.verifyDirectory(this.destFolder);
     await this.copyFolder(this.srcFolder, this.currDestParentFolder, { clearFolder: this.destFolder });
     await this.deleteSourceMaps(this.destFolder);
     await this.uglify(this.destFolder);
@@ -126,7 +128,7 @@ export class NgxUglifier {
       files = await fsPromises.readdir(source);
       for (const file of files) {
         const curSource = path.join(source, file);
-        const isDirectory = this.isResourceDirectory(curSource);
+        const isDirectory = await this.isResourceDirectory(curSource);
         if (isDirectory) {
           await this.copyFolder(curSource, targetFolder);
         } else {

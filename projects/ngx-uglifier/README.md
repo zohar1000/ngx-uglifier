@@ -28,20 +28,20 @@ In this sample the only names that will be preserved after uglification will be 
 ```angular2html
 @Directive({ selector: '[myLib]' })
 export class MyLibDirective {
-  private _options;
+private _options;
 
-  constructor(private viewContainer: ViewContainerRef) {
-	  this._initOptions();
-  }
-
-  private _initOptions() {
-	return this._options = { isEmbed: true };
-  }
-
-  public isEmbed() {
-	return this._options.isEmbed;
-  }
+constructor(private viewContainer: ViewContainerRef) {
+this._initOptions();
 }
+
+private _initOptions() {
+return this._options = { isEmbed: true };
+}
+
+public isEmbed() {
+return this._options.isEmbed;
+}
+    }
 ```
 
 # Installation
